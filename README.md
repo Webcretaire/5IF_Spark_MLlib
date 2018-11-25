@@ -12,6 +12,8 @@ The code is split in 4 files :
 
 ## Execution
 
+An example of setup for the version 2.3.2 of Spark on Debian can be found in ```server-setup.sh```, but should be adapted with your paths and Spark version
+
 Only the supervisor scripts should be run directly, their usage is detailed in the comments of each scripts, here are two examples :
 
 ```bash
