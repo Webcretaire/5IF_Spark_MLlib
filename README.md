@@ -35,6 +35,8 @@ Each algorithm is ran several times using variable sized datasets (specified as 
 
 The execution time are stored in a file in a folder called ```out```, and the models in a ```models``` folder for the learning algorithms (both folders must exist before starting the scripts).
 
+The error of the clustering was computed using the Within Set Sum of Squared Errors methods (and then divided by the dataset size in the graphs).
+
 ## Architecture and results
 
 These tests have been run on 5 different configuration, with 1 master machine and 1 to 5 worker machines. 
@@ -50,3 +52,5 @@ M**X**W**Y** Where X is the number of master node (so always 1), and Y the numbe
 Graphs on results are also stored in the ```result``` folder in pdf form. What we can observe is that with more workers the learning phase can be sped up a bit by using 2 or 3 workers, but after that we don't manage to get any more improvement in performance. 
 
 The execution phase is always very fast (1/100th to 1/50th of a millisecond, even with quite large datasets), so we get the same results no matter how many workers we use (which might be explained by the fact that each machine is already quite powerful on its own, and don't even use 100% CPU with 1 worker configuration)
+
+We can also see that the clustering globally gets more precise as we increase the dataset size, but is still quite varying, which can probably be explained by the fact that k-means is randomly initialized and that k is chosen quite arbitrarily too.
