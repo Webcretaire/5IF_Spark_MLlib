@@ -51,7 +51,7 @@ M**X**W**Y** Where X is the number of master node (so always 1), and Y the numbe
 
 ## Comments on results
 
-Graphs on results are also stored in the ```result``` folder in pdf form. What we can observe is that with more workers the learning phase can be sped up a bit by using 2 or 3 workers, but after that we don't manage to get any more improvement in performance. 
+Graphs on results are also stored in the ```result``` folder in pdf form. What we can observe is that with more workers the learning phase can be sped up a bit by using 2 or 3 workers, but after that we don't manage to get any more improvement in performance. We can also see that no matter what the dataset size and number of workers is, the execution time never gets below 6 seconds, which might be explained by caching effects which are only efficient after a certain quantity of data have been processed.
 
 The execution phase is always very fast (1/100th to 1/50th of a millisecond, even with quite large datasets), so we get the same results no matter how many workers we use (which might be explained by the fact that each machine is already quite powerful on its own, and don't even use 100% CPU with 1 worker configuration)
 
