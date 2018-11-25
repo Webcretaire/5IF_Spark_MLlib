@@ -43,7 +43,7 @@ Each machine had the same characteristics (2 x Intel Xeon X5670 ; 6 cores/CPU ; 
 
 The results are located in the ```result``` folder, using the following convention : 
 
-M***X***W***Y*** Where X is the number of master node (so always 1), and Y the number of worker nodes
+M**X**W**Y** Where X is the number of master node (so always 1), and Y the number of worker nodes
 
 ## Comments on results
 
