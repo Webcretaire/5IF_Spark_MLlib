@@ -37,7 +37,7 @@ Each algorithm is ran several times using variable sized datasets (specified as 
 
 The execution time are stored in a file in a folder called ```out```, and the models in a ```models``` folder for the learning algorithms (both folders must exist before starting the scripts).
 
-The error of the clustering was computed using the Within Set Sum of Squared Errors methods (and then divided by the dataset size in the graphs).
+The quality of the clustering was computed using the Within Set Sum of Squared Errors method (this error was divided by the dataset size in the graphs).
 
 ## Architecture and results
 
