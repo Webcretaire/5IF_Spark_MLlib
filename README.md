@@ -56,3 +56,7 @@ Graphs on results are also stored in the ```result``` folder in pdf form. What w
 The execution phase is always very fast (1/100th to 1/50th of a millisecond, even with quite large datasets), so we get the same results no matter how many workers we use (which might be explained by the fact that each machine is already quite powerful on its own, and don't even use 100% CPU with 1 worker configuration)
 
 We can also see that the clustering globally gets more precise as we increase the dataset size, but is still quite varying, which can probably be explained by the fact that k-means is randomly initialized and that k is chosen quite arbitrarily too.
+
+## Additional algorithms
+
+We tried to use our measurements on a different algorithm ([BisectingKMeans](https://spark.apache.org/docs/2.2.0/mllib-clustering.html#bisecting-k-means)), but its implementation seems incomplete for the Python library (it isn't possible to save / load a model), so we abandoned this path and concentrated on the main k-means algorithm.
